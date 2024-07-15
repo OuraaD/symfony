@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Oura
+{% endblock %}
+
+{% block body %}
+	<pre>
+    {{ dump(name) }}
+</pre>
+
+	<main>
+		<h1>Ma page d'accueil</h1>
+		<h2>{{name}}</h2>
+		<p>{{paragraphe}}</p>
+
+	  {% for animal in animals %}
+        <li>{{ animal }}</li>
+    {% endfor %}
+	</main>
+
+
+{% endblock %}
